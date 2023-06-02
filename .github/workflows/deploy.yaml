@@ -1,6 +1,6 @@
 # Extracted from https://github.com/JulianCataldo/gh-actions/tree/main
 
-name: Flowbite Admin Dashboard — Deploy to Demo to GitHub Pages
+name: CREDEBL Admin Dashboard — Deploy to Demo to GitHub Pages
 
 on:
   push:
