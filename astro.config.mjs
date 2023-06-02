@@ -9,8 +9,7 @@ const DEV_PORT = 2121;
 // https://astro.build/config
 export default defineConfig({
 	site: 'useful-rabbit-56.deno.dev',
-	//base: process.env.CI ? '/' : undefined,
-
+	base: process.env.CI ? '/flowbite-astro-admin-dashboard' : undefined,
 	output: 'server',
 	adapter: deno(),
 
