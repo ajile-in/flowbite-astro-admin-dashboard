@@ -12,6 +12,7 @@ console.log(`SITE_URL : ${SITE_URL}`);
 // https://astro.build/config
 export default defineConfig({
 	site: SITE_URL,
+	base: '/',
 	output: 'server',
 	adapter: deno(),
 
