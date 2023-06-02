@@ -1,9 +1,10 @@
 import { defineConfig } from 'astro/config';
 
+import deno from "@astrojs/deno";
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 
-const DEV_PORT = 2121;
+const DEV_PORT = 8080;
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,15 +13,16 @@ export default defineConfig({
 		: `http://localhost:${DEV_PORT}`,
 	base: process.env.CI ? '/flowbite-astro-admin-dashboard' : undefined,
 
-	// output: 'server',
+	output: 'server',
+	adapter: deno(),
 
 	/* Like Vercel, Netlify,… Mimicking for dev. server */
 	// trailingSlash: 'always',
 
-	server: {
-		/* Dev. server only */
-		port: DEV_PORT,
-	},
+	// server: {
+	// 	/* Dev. server only */
+	// 	port: DEV_PORT,
+	// },
 
 	integrations: [
 		//
