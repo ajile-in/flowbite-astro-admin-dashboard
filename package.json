@@ -32,7 +32,8 @@
 		"astro": "astro",
 		"build": "astro build",
 		"dev": "astro dev",
-		"preview": "astro preview",
+		//"preview": "astro preview",
+		"preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs",
 		"start": "astro dev"
 	},
 	"dependencies": {
