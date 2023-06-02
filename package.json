@@ -32,7 +32,6 @@
 		"astro": "astro",
 		"build": "astro build",
 		"dev": "astro dev",
-		//"preview": "astro preview",
 		"preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs",
 		"start": "astro dev"
 	},
@@ -42,6 +41,7 @@
 		"@faker-js/faker": "^7.6.0",
 		"apexcharts": "^3.37.2",
 		"astro": "^2.0.4",
+    "@astrojs/deno": "^4.1.0",
 		"flowbite": "^1.6.3",
 		"flowbite-typography": "^1.0.3",
 		"shiki": "^0.14.1",
