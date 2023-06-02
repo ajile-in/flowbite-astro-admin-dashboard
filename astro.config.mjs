@@ -8,8 +8,7 @@ const DEV_PORT = 2121;
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://useful-rabbit-56.deno.dev',
-	base: process.env.CI ? '/' : undefined,
+	site: `http://localhost:${DEV_PORT}`,
 	output: 'server',
 	adapter: deno(),
 
