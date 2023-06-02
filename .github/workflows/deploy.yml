@@ -29,5 +29,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "useful-rabbit-56"
-          entrypoint: "index.js" # 📝 Update the entrypoint
-          root: "."
+          entrypoint: "server/entry.mjs" # 📝 Update the entrypoint
+          root: "dist"
