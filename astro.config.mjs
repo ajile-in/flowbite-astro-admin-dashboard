@@ -5,10 +5,13 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 
 const DEV_PORT = 2121;
+const SITE_URL = import.meta.env.DEV ? `http://localhost:${DEV_PORT}` : `http://useful-rabbit-56.deno.dev`;
+
+console.log(`SITE_URL : ${SITE_URL}`);
 
 // https://astro.build/config
 export default defineConfig({
-	site: `http://localhost:${DEV_PORT}`,
+	site: SITE_URL,
 	output: 'server',
 	adapter: deno(),
 
